@@ -1,11 +1,5 @@
 public class Gryffindor extends Hogwarts {
 
-<<<<<<< HEAD
-    public Gryffindor(String name, String surname, int silaMagii, int distanceTransgression) {
-        super(name, surname, silaMagii, distanceTransgression);
-    }
-}
-=======
     private String name;
     private String surname;
     private int silaMagii;
@@ -55,4 +49,3 @@ public class Gryffindor extends Hogwarts {
     }
 }
 
->>>>>>> 0bb88fc (созданы классы, прописан код наследование)
