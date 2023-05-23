@@ -1,23 +1,28 @@
 public class Hufflepuff extends Hogwarts {
 
-<<<<<<< HEAD
-    public Hufflepuff (String name, String surname, int silaMagii, int distanceTransgression) {
-        super(name, surname, silaMagii, distanceTransgression);
-=======
-
-    private String name;
-    private String surname;
-    private int silaMagii;
-    private int distanceTransgression;
-    private int industriousness;
-    private int loyalty;
-    private int honesty;
+        private String name;
+        private String surname;
+        private int silaMagii;
+        private int distanceTransgression;
+        private int industriousness;
+        private int loyalty;
+        private int honesty;
 
     public Hufflepuff(String name, String surname, int silaMagii, int distanceTransgression, int industriousness, int loyalty, int honesty) {
         super(name, surname, silaMagii, distanceTransgression);
         this.industriousness = industriousness;
         this.loyalty = loyalty;
         this.honesty = honesty;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getIndustriousness() {
@@ -51,6 +56,8 @@ public class Hufflepuff extends Hogwarts {
                 ", loyalty=" + loyalty +
                 ", honesty=" + honesty +
                 '}';
->>>>>>> 0bb88fc (созданы классы, прописан код наследование)
     }
 }
+
+
+

@@ -1,17 +1,13 @@
 public class Ravenclaw extends Hogwarts {
-<<<<<<< HEAD
 
-    public void Ravenclaw (String name, String surname, int silaMagii, int distanceTransgression) {
-        super(name, surname, silaMagii, distanceTransgression);
-=======
-    private String name;
-    private String surname;
-    private int silaMagii;
-    private int distanceTransgression;
-    private int mind;
-    private int wisdom;
-    private int wit;
-    private int creation;
+       String name;
+       String surname;
+        private int silaMagii;
+        private int distanceTransgression;
+        private int mind;
+        private int wisdom;
+        private int wit;
+        private int creation;
 
     public Ravenclaw(String name, String surname, int silaMagii, int distanceTransgression, int mind, int wisdom, int wit, int creation) {
         super(name, surname, silaMagii, distanceTransgression);
@@ -56,10 +52,10 @@ public class Ravenclaw extends Hogwarts {
     @Override
     public String toString() {
         return "Ravenclaw{" +
-                "wisdom=" + wisdom +
+                "mind=" + mind +
+                ", wisdom=" + wisdom +
                 ", wit=" + wit +
                 ", creation=" + creation +
                 '}';
->>>>>>> 0bb88fc (созданы классы, прописан код наследование)
     }
 }

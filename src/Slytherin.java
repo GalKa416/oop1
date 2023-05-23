@@ -1,9 +1,7 @@
 public class Slytherin extends Hogwarts {
 
-<<<<<<< HEAD
-    public void Slytherin (String name, String surname, int silaMagii, int distanceTransgression) {
-        super(name, surname, silaMagii, distanceTransgression);
-=======
+
+
     private String name;
     private String surname;
     private int silaMagii;
@@ -72,6 +70,5 @@ public class Slytherin extends Hogwarts {
                 ", resourcefulness=" + resourcefulness +
                 ", authoritativeness=" + authoritativeness +
                 '}';
->>>>>>> 0bb88fc (созданы классы, прописан код наследование)
     }
 }
