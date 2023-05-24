@@ -15,15 +15,7 @@ public class Hufflepuff extends Hogwarts {
         this.honesty = honesty;
     }
 
-    @Override
-    public String getName() {
-        return name;
-    }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getIndustriousness() {
         return industriousness;
