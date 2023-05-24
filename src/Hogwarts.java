@@ -4,6 +4,7 @@ public class Hogwarts {
     private int silaMagii;
     private int distanceTransgression;
 
+
     public Hogwarts(String name, String surname, int silaMagii, int distanceTransgression) {
         this.name = name;
         this.surname = surname;
@@ -52,4 +53,6 @@ public class Hogwarts {
                 ", distanceTransgression=" + distanceTransgression +
                 '}';
     }
+
+
 }
