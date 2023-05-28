@@ -54,5 +54,23 @@ public class Hogwarts {
                 '}';
     }
 
+    public static void bestHogwarts(Hogwarts first, Hogwarts second) {
+        if (first.getSilaMagii() > second.getSilaMagii()) {
+            System.out.println("Сила магии у студента  " + first.getName() + " " + first.getSurname() + " больше, чем " + second.getName() + " " + second.getSurname() + " в школе Hogwarts");
 
-}
+        } else if (second.getSilaMagii() > first.getSilaMagii()) {
+            System.out.println("Сила магии у студента " + second.getName() + " " + second.getSurname() + " больше, чем " + first.getName() + " " + first.getSurname() + " в школе Hogwarts");
+        } else {
+            System.out.println("Сила магии у  " + first.getName() + " " + first.getSurname() + " и " + second.getName() + " " + second.getSurname() + " в школе Hogwarts одинакова");
+        }
+        if (first.getDistanceTransgression() > second.getDistanceTransgression()) {
+            System.out.println("Расстояние трансгрессии у студента  " + first.getName() + " " + first.getSurname() + " больше, чем " + second.getName() + " " + second.getSurname() + " в школе Hogwarts");
+
+        } else if (second.getDistanceTransgression() > first.getDistanceTransgression()) {
+            System.out.println("Расстояние трансгрессии у студента " + second.getName() + " " + second.getSurname() + " больше, чем " + first.getName() + " " + first.getSurname() + " в школе Hogwarts");
+        } else {
+            System.out.println("Расстояние трансгрессии у  " + first.getName() + " " + first.getSurname() + " и " + second.getName() + " " + second.getSurname() + " в школе Hogwarts одинаково");
+        }
+    }
+    }
+

@@ -1,9 +1,6 @@
 public class Ravenclaw extends Hogwarts {
 
-       String name;
-       String surname;
-        private int silaMagii;
-        private int distanceTransgression;
+
         private int mind;
         private int wisdom;
         private int wit;
@@ -51,11 +48,27 @@ public class Ravenclaw extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Ravenclaw{" +
+        return "Студент Ravenclaw{"
+                +getName()+ " " +getSurname()+
+                ", silaMagii = "+getSilaMagii()+
+                ", distanceTransgression= " +getDistanceTransgression()+
                 "mind=" + mind +
                 ", wisdom=" + wisdom +
                 ", wit=" + wit +
                 ", creation=" + creation +
                 '}';
+    }
+    public static void bestRavenclaw(Ravenclaw first, Ravenclaw second) {
+
+        int firstSum = first.getCreation() + first.getMind() + first.getWisdom() + first.getWit();
+        int secondSum = second.getCreation() + second.getMind() + second.getWisdom() + second.getWit();
+        if (firstSum > secondSum) {
+            System.out.println("Студент " + first.getName() + " " + first.getSurname() + " лучше, чем " + second.getName() + " " + second.getSurname() + " на факльтете Ravenclaw");
+
+        } else if (secondSum > firstSum) {
+            System.out.println("Студент " + second.getName() + " " + second.getSurname() + " лучше, чем " + first.getName() + " " + first.getSurname() + " на факльтете Ravenclaw");
+        } else {
+            System.out.println("Студенты " + first.getName() + " " + first.getSurname() + " и " + second.getName() + " " + second.getSurname() + " на факльтете Ravenclaw");
+        }
     }
 }

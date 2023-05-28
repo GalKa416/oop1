@@ -1,9 +1,6 @@
 public class Hufflepuff extends Hogwarts {
 
-        private String name;
-        private String surname;
-        private int silaMagii;
-        private int distanceTransgression;
+
         private int industriousness;
         private int loyalty;
         private int honesty;
@@ -43,11 +40,27 @@ public class Hufflepuff extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Hufflepuff{" +
+        return "Студент Hufflepuff{"
+                +getName()+ " " +getSurname()+
+                ", silaMagii = "+getSilaMagii()+
+                ", distanceTransgression= " +getDistanceTransgression()+
                 "industriousness=" + industriousness +
                 ", loyalty=" + loyalty +
                 ", honesty=" + honesty +
                 '}';
+    }
+    public static void bestHufflepuff(Hufflepuff first, Hufflepuff second) {
+
+        int firstSum = first.getHonesty() + first.getLoyalty() + first.getIndustriousness();
+        int secondSum = second.getHonesty() + second.getLoyalty() + second.getIndustriousness();
+        if (firstSum > secondSum) {
+            System.out.println("Студент " + first.getName() + " " + first.getSurname() + " лучше, чем " + second.getName() + " " + second.getSurname() + " на факльтете Hufflepuff");
+
+        } else if (secondSum > firstSum) {
+            System.out.println("Студент " + second.getName() + " " + second.getSurname() + " лучше, чем " + first.getName() + " " + first.getSurname() + " на факльтете Hufflepuff");
+        } else {
+            System.out.println("Студенты " + first.getName() + " " + first.getSurname() + " и " + second.getName() + " " + second.getSurname() + " на факльтете Hufflepuff");
+        }
     }
 }
 

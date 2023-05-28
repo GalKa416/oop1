@@ -1,11 +1,5 @@
 public class Slytherin extends Hogwarts {
 
-
-
-    private String name;
-    private String surname;
-    private int silaMagii;
-    private int distanceTransgression;
     private int cunning;
     private int decisiveness;
     private int ambitious;
@@ -63,12 +57,28 @@ public class Slytherin extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Slytherin{" +
+        return "Студент Slytherin{"
+                +getName()+ " " +getSurname()+
+                ", silaMagii = "+getSilaMagii()+
+                ", distanceTransgression= " +getDistanceTransgression()+
                 "cunning=" + cunning +
                 ", decisiveness=" + decisiveness +
                 ", ambitious=" + ambitious +
                 ", resourcefulness=" + resourcefulness +
                 ", authoritativeness=" + authoritativeness +
                 '}';
+    }
+    public static void bestSlytherin(Slytherin first, Slytherin second) {
+
+        int firstSum = first.getAmbitious() + first.getCunning() + first.getDecisiveness() + first.getAuthoritativeness() + first.getResourcefulness();
+        int secondSum = second.getAmbitious() + second.getCunning() + second.getDecisiveness() + second.getAuthoritativeness() + second.getResourcefulness();
+        if (firstSum > secondSum) {
+            System.out.println("Студент " + first.getName() + " " + first.getSurname() + " лучше, чем " + second.getName() + " " + second.getSurname() + " на факльтете Slytherin");
+
+        } else if (secondSum > firstSum) {
+            System.out.println("Студент " + second.getName() + " " + second.getSurname() + " лучше, чем " + first.getName() + " " + first.getSurname() + " на факльтете Slytherin");
+        } else {
+            System.out.println("Студенты " + first.getName() + " " + first.getSurname() + " и " + second.getName() + " " + second.getSurname() + " на факльтете Slytherin");
+        }
     }
 }
